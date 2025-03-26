@@ -115,7 +115,7 @@ def main():
     delay = args.delay
     domain_name = extract_domain(sitemap_url)
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    output_csv = f"{domain_name}_pagespeed_{timestamp}.csv"
+    output_csv = f"{domain_name}_pagespeed_page_{timestamp}.csv"
 
     print(f"🔍 Mengambil URL dari sitemap: {sitemap_url}")
     urls = get_urls_from_sitemap(sitemap_url)
